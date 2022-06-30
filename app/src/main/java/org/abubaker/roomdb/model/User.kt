@@ -11,10 +11,10 @@ data class User(
     val id: Int,
 
     @ColumnInfo(name = "first_name")
-    val firstName: String,
+    val firstName: String?,
 
     @ColumnInfo(name = "last_name")
-    val lastName: String,
+    val lastName: String?,
 
     @ColumnInfo(name = "age")
     val age: Int

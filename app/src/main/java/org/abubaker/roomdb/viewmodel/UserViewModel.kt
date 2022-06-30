@@ -36,6 +36,7 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
     fun addUser(user: User) {
 
         // Dispatchers.IO = Run code in the background thread.
+        // viewModelScope
         viewModelScope.launch(Dispatchers.IO) {
             repository.addUser(user)
         }
