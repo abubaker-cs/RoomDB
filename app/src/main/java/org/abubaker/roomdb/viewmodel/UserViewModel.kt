@@ -1,4 +1,4 @@
-package org.abubaker.roomdb.ui.viewmodel
+package org.abubaker.roomdb.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
