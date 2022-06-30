@@ -54,4 +54,11 @@
 * FILE 06 - *ListAdapter
 *
 * Adapter for the RecyclerView being used in the ShoeListFragment.kt file
-  */
+  */ ============= Practice:
+
+Continue:
+ROOM Database - Kotlin
+https://www.youtube.com/playlist?list=PLSrm9z4zp4mEPOfZNV9O-crOhoMa0G2-o
+
+Next: Android Room with a View - Kotlin
+https://developer.android.com/codelabs/android-room-with-a-view-kotlin#0

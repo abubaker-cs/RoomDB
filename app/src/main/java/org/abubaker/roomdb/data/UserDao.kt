@@ -26,4 +26,9 @@ interface UserDao {
  * LiveData value has no change
  *
  * https://www.autoscripts.net/dao-error-type-of-the-parameter-must-be-a-class-annotated-with-entity-or-a-collection-array-of-it/
+ *
+ *
+ * BUG Solution:
+ * https://stackoverflow.com/questions/70292474/cant-use-suspend-function-in-roomdb-dao
+ *
  */
