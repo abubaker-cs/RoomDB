@@ -5,25 +5,37 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import org.abubaker.roomdb.R
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import org.abubaker.roomdb.databinding.FragmentListBinding
 
 
 class ListFragment : Fragment() {
 
-    // private var _binding: ListFragmentBinding? = null
-    // private val binding get() = _binding!!
+    private var _binding: FragmentListBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_list, container, false)
+        _binding = FragmentListBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.floatingActionButton.setOnClickListener {
 
+            binding.rvList.layoutManager = LinearLayoutManager(this.context)
 
-        return view
+            val action = ListFragmentDirections.actionItemListFragmentToAddItemFragment(
+                // getString(R.string.add_fragment_title)
+            )
+
+            this.findNavController().navigate(action)
+        }
     }
 
 }

@@ -62,3 +62,6 @@ https://www.youtube.com/playlist?list=PLSrm9z4zp4mEPOfZNV9O-crOhoMa0G2-o
 
 Next: Android Room with a View - Kotlin
 https://developer.android.com/codelabs/android-room-with-a-view-kotlin#0
+
+Learn advanced coroutines with Kotlin Flow and LiveData
+https://kiosk-dot-codelabs-site.appspot.com/codelabs/advanced-kotlin-coroutines/index.html?index=..%2F..index#7

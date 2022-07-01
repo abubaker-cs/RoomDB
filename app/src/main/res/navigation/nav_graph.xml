@@ -8,23 +8,24 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="org.abubaker.roomdb.ListFragment"
+        android:name="org.abubaker.roomdb.fragments.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list"
         >
         <action
-            android:id="@+id/action_listFragment_to_addFragment"
+            android:id="@+id/action_itemListFragment_to_addItemFragment"
             app:destination="@id/addFragment"
             />
+
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="org.abubaker.roomdb.AddFragment"
+        android:name="org.abubaker.roomdb.fragments.add.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add"
         >
         <action
-            android:id="@+id/action_addFragment_to_listFragment"
+            android:id="@+id/AddToListFragment"
             app:destination="@id/listFragment"
             />
     </fragment>
