@@ -66,6 +66,9 @@ class AddFragment : Fragment() {
                 AddFragmentDirections.actionAddItemFragmentToItemListFragment()
             )
 
+        } else {
+            Toast.makeText(requireContext(), "Please fill out all fields.", Toast.LENGTH_SHORT)
+                .show()
         }
 
     }
