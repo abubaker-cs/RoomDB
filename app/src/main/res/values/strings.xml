@@ -3,7 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fab_add_desc">Add new entry</string>
-    <string name="list_fragment_title">List of Items</string>
-    <string name="add_fragment_title">Add Item</string>
-    <string name="edit_fragment_title">Edit Item</string>
+    <string name="list_fragment_title">List of Shoes</string>
+    <string name="add_fragment_title">Add New Shoe</string>
+    <string name="edit_fragment_title">Edit Shoe</string>
 </resources>
