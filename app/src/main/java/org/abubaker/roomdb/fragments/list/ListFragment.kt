@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import org.abubaker.roomdb.databinding.FragmentListBinding
 
 
@@ -28,14 +27,14 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.floatingActionButton.setOnClickListener {
 
-            binding.rvList.layoutManager = LinearLayoutManager(this.context)
+            // binding.rvList.layoutManager = LinearLayoutManager(this.context)
 
-            val action = ListFragmentDirections.actionItemListFragmentToAddItemFragment(
-                // getString(R.string.add_fragment_title)
-            )
-
+            // Fragment: Add Item
+            val action = ListFragmentDirections.actionItemListFragmentToAddItemFragment()
             this.findNavController().navigate(action)
+
         }
+
     }
 
 }
