@@ -27,11 +27,10 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.floatingActionButton.setOnClickListener {
 
-            // binding.rvList.layoutManager = LinearLayoutManager(this.context)
-
             // Fragment: Add Item
-            val action = ListFragmentDirections.actionItemListFragmentToAddItemFragment()
-            this.findNavController().navigate(action)
+            findNavController().navigate(
+                ListFragmentDirections.actionItemListFragmentToAddItemFragment()
+            )
 
         }
 
